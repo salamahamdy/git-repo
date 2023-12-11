@@ -8,3 +8,8 @@
     service:
     - name: apache2
     - state: present
+  - name: install vim 
+    service:
+    - name: vim 
+    - state: present
+    
