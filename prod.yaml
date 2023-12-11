@@ -1,0 +1,10 @@
+---
+- name: install new feature
+- hosts: serverb
+- become: true
+- gather_factor: no
+- task:
+  - name: install apache
+    service:
+    - name: apache2
+    - state: present
